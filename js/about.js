@@ -1,7 +1,7 @@
 import { modeSelect } from "./functions.js";
 const aboutImg = document.querySelector("#flag");
 const countryName = document.querySelector("#name");
-const NativeName = document.querySelector("#nativeName");
+const nativeName = document.querySelector("#nativeName");
 const population = document.querySelector("#population");
 const region = document.querySelector("#region");
 const subRegion = document.querySelector("#subRegion");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
           aboutImg.src = data.flags.png;
 
           countryName.innerHTML = data.name.common;
-          NativeName.innerHTML = "<strong>Native Name:</strong>" + data.name.nativeName;
+          nativeName.innerHTML = "<strong>Native Name:</strong>" + data.name.nativeName;
           population.innerHTML = "<strong>Population:</strong>" + data.population;
           region.innerHTML =  "<strong>Region:</strong>" + data.region;
           subRegion.innerHTML = "<strong>Sub Region:</strong>" + data.subregion;
